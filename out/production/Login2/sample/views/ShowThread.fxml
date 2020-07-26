@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #e3f2fd;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.ShowThreadController">
+   <children>
+      <Label fx:id="commentOwner" layoutX="14.0" layoutY="14.0" prefHeight="32.0" prefWidth="570.0" style="-fx-background-color: #64b5f6;" text="Label" />
+      <Label fx:id="commentText" alignment="TOP_LEFT" layoutX="14.0" layoutY="51.0" prefHeight="101.0" prefWidth="570.0" style="-fx-background-color: #b3e5fc;" text="Label" />
+      <JFXListView fx:id="repliedComments" layoutX="14.0" layoutY="168.0" prefHeight="276.0" prefWidth="570.0" />
+      <JFXTextArea fx:id="replyText" layoutX="23.0" layoutY="458.0" prefHeight="121.0" prefWidth="239.0" promptText="reply" style="-fx-background-color: #b3e5fc;" />
+      <JFXButton fx:id="sendReply" layoutX="292.0" layoutY="548.0" prefHeight="31.0" prefWidth="82.0" style="-fx-background-color: #304ffe;" text="send" textFill="WHITE" />
+      <Label fx:id="error" layoutX="292.0" layoutY="470.0" prefHeight="52.0" prefWidth="156.0" textFill="#ff0101" />
+   </children>
+</AnchorPane>

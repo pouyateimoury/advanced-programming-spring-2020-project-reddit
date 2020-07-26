@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXRippler?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1080.0" style="-fx-background-color: #e3f2fd;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.SubRedditController">
+    <children>
+        <Label fx:id="redditLabal" layoutX="101.0" layoutY="5.0" prefHeight="60.0" prefWidth="118.0" text="Reddit">
+            <font>
+                <Font name="System Italic" size="24.0" />
+            </font></Label>
+        <JFXTextField fx:id="searchpan" layoutX="276.0" layoutY="14.0" prefHeight="42.0" prefWidth="495.0" promptText=" Search" style="-fx-background-color: #2196f3;">
+            <font>
+                <Font name="System Bold" size="19.0" />
+            </font>
+        </JFXTextField>
+        <JFXRippler layoutX="746.0" layoutY="98.0" />
+        <ImageView fitHeight="69.0" fitWidth="71.0" layoutX="26.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assets/reddit-logo-16.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="profile" fitHeight="42.0" fitWidth="48.0" layoutX="830.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assets/hi.png" />
+            </image>
+        </ImageView>
+        <JFXButton fx:id="search" layoutX="702.0" layoutY="14.0" prefHeight="42.0" prefWidth="69.0" style="-fx-background-color: #1565c0;" text="search" textFill="WHITE" />
+        <JFXButton fx:id="profileButton" layoutX="872.0" layoutY="14.0" prefHeight="42.0" prefWidth="189.0" style="-fx-background-color: #2196f3;" text="Profile">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </JFXButton>
+        <JFXButton fx:id="logoutButton" layoutX="990.0" layoutY="74.0" prefHeight="33.0" prefWidth="71.0" style="-fx-background-color: #2196f3;" text="Logout">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </JFXButton>
+        <Label layoutX="88.0" layoutY="83.0" prefHeight="42.0" prefWidth="177.0" text="Posts :">
+            <font>
+                <Font name="System Bold" size="33.0" />
+            </font>
+        </Label>
+        <AnchorPane layoutX="724.0" layoutY="129.0" prefHeight="412.0" prefWidth="338.0" style="-fx-background-color: #455a64;">
+            <children>
+                <ImageView fx:id="subRedditProfile" fitHeight="81.0" fitWidth="60.0" layoutX="8.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../assets/hi.png" />
+                    </image>
+                </ImageView>
+                <JFXButton fx:id="newPost" layoutX="8.0" layoutY="349.0" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #10b3a5;" text="NEW POST" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></JFXButton>
+                <Label fx:id="username" layoutX="8.0" layoutY="160.0" prefHeight="26.0" prefWidth="101.0" text="username" textFill="WHITE" />
+                <Label layoutX="206.0" layoutY="186.0" prefHeight="21.0" prefWidth="80.0" text="Members" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="17.0" />
+                    </font>
+                </Label>
+                <Label fx:id="members" layoutX="216.0" layoutY="212.0" prefHeight="26.0" prefWidth="60.0" text="Label" textFill="WHITE" />
+            <AnchorPane prefHeight="69.0" prefWidth="338.0" style="-fx-background-color: #718792;">
+               <children>
+                  <Label layoutX="29.0" layoutY="14.0" prefHeight="42.0" prefWidth="196.0" text="About Community" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font></Label>
+               </children>
+            </AnchorPane>
+            <JFXButton fx:id="joinOrLeave" layoutX="8.0" layoutY="290.0" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #10b3a5;" text="JOIN" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="about" alignment="TOP_LEFT" layoutX="8.0" layoutY="189.0" prefHeight="89.0" prefWidth="183.0" text="Label" textFill="WHITE" />
+            <Label fx:id="name" layoutX="79.0" layoutY="113.0" prefHeight="42.0" prefWidth="234.0" text="Label" textFill="WHITE" />
+            </children>
+        </AnchorPane>
+        <JFXButton fx:id="home" layoutX="194.0" layoutY="13.0" prefHeight="45.0" prefWidth="71.0" style="-fx-background-color: #2196f3;" text="Home">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </JFXButton>
+      <JFXListView fx:id="posts" layoutX="88.0" layoutY="129.0" prefHeight="530.0" prefWidth="603.0" />
+      <Label fx:id="error" layoutX="729.0" layoutY="581.0" prefHeight="42.0" prefWidth="212.0" textFill="#f80000" />
+    </children>
+</AnchorPane>

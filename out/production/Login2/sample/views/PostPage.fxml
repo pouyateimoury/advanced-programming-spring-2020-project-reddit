@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXRippler?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1080.0" style="-fx-background-color: #e3f2fd;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.PostController">
+    <children>
+        <Label fx:id="redditLabal" layoutX="101.0" layoutY="5.0" prefHeight="60.0" prefWidth="118.0" text="Reddit">
+            <font>
+                <Font name="System Italic" size="24.0" />
+            </font></Label>
+        <JFXTextField fx:id="searchpan" layoutX="276.0" layoutY="14.0" prefHeight="42.0" prefWidth="495.0" promptText=" Search" style="-fx-background-color: #2196f3;">
+            <font>
+                <Font name="System Bold" size="19.0" />
+            </font>
+        </JFXTextField>
+        <JFXRippler layoutX="746.0" layoutY="98.0" />
+        <ImageView fitHeight="69.0" fitWidth="71.0" layoutX="26.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assets/reddit-logo-16.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="profile" fitHeight="42.0" fitWidth="48.0" layoutX="830.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assets/hi.png" />
+            </image>
+        </ImageView>
+        <JFXButton fx:id="search" layoutX="702.0" layoutY="14.0" prefHeight="42.0" prefWidth="69.0" style="-fx-background-color: #1565c0;" text="search" textFill="WHITE" />
+        <JFXButton fx:id="profileButton" layoutX="872.0" layoutY="14.0" prefHeight="42.0" prefWidth="189.0" style="-fx-background-color: #2196f3;" text="Profile">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </JFXButton>
+        <JFXButton fx:id="logoutButton" layoutX="989.0" layoutY="65.0" prefHeight="33.0" prefWidth="71.0" style="-fx-background-color: #2196f3;" text="Logout">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </JFXButton>
+        <Label fx:id="time" layoutX="101.0" layoutY="74.0" prefHeight="33.0" prefWidth="298.0">
+            <font>
+                <Font name="System Bold" size="19.0" />
+            </font>
+        </Label>
+        <JFXButton fx:id="homeButton" layoutX="194.0" layoutY="13.0" prefHeight="45.0" prefWidth="71.0" style="-fx-background-color: #2196f3;" text="Home">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </JFXButton>
+      <AnchorPane layoutX="39.0" layoutY="108.0" prefHeight="595.0" prefWidth="1020.0">
+         <children>
+            <ImageView fx:id="image" fitHeight="595.0" fitWidth="616.0" layoutX="60.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="postby" layoutX="685.0" layoutY="5.0" prefHeight="29.0" prefWidth="71.0" style="-fx-background-color: #64b5f6;" text="post by :">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label fx:id="postTitle" layoutX="684.0" layoutY="38.0" prefHeight="42.0" prefWidth="325.0" style="-fx-background-color: #b3e5fc;" text="title">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font></Label>
+            <Label fx:id="discription" alignment="TOP_LEFT" layoutX="684.0" layoutY="84.0" prefHeight="141.0" prefWidth="325.0" style="-fx-background-color: #b3e5fc;" text="Label">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <JFXListView fx:id="comments" layoutX="684.0" layoutY="259.0" prefHeight="219.0" prefWidth="325.0" />
+            <JFXTextArea fx:id="writecomment" layoutX="685.0" layoutY="485.0" prefHeight="96.0" prefWidth="214.0" promptText="add comment" style="-fx-background-color: #b3e5fc;" />
+            <JFXButton fx:id="sendCommentButton" layoutX="939.0" layoutY="550.0" prefHeight="31.0" prefWidth="69.0" style="-fx-background-color: #304ffe;" text="send" textFill="WHITE" />
+            <Hyperlink fx:id="postByUser" layoutX="753.0" layoutY="5.0" prefHeight="29.0" prefWidth="255.0" style="-fx-background-color: #64b5f6;" text="Hyperlink" textFill="#0011ff" />
+            <JFXButton fx:id="high" layoutX="4.0" layoutY="7.0" prefHeight="31.0" prefWidth="50.0" style="-fx-background-color: #304ffe;" text="high" textFill="WHITE" />
+            <Label fx:id="score" layoutX="5.0" layoutY="59.0" prefHeight="33.0" prefWidth="50.0" text="score" />
+            <JFXButton fx:id="low" layoutX="4.0" layoutY="111.0" prefHeight="31.0" prefWidth="50.0" style="-fx-background-color: #304ffe;" text="low" textFill="WHITE" />
+            <Label fx:id="errorlabel" layoutX="908.0" layoutY="485.0" prefHeight="45.0" prefWidth="102.0" textFill="#d31010" />
+            <Label layoutX="685.0" layoutY="238.0" prefHeight="21.0" prefWidth="102.0" text="comments :" />
+         </children></AnchorPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorpane" prefHeight="150.0" prefWidth="297.0" style="-fx-background-color: #e0e0e0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="commentText" alignment="TOP_LEFT" layoutX="6.0" layoutY="29.0" prefHeight="84.0" prefWidth="287.0" style="-fx-background-color: #b3e5fc;" text="Label" />
+      <JFXButton fx:id="showThread" layoutX="15.0" layoutY="114.0" prefHeight="31.0" prefWidth="234.0" style="-fx-background-color: #304ffe;" text="show thread and add  comment" textFill="WHITE" />
+      <Label fx:id="numOfThread" layoutX="257.0" layoutY="119.0" prefHeight="21.0" prefWidth="36.0" text="Label" />
+      <Label fx:id="commentBy" layoutX="7.0" layoutY="4.0" prefHeight="21.0" prefWidth="287.0" style="-fx-background-color: #64b5f6;" text="Label" />
+   </children>
+</AnchorPane>
